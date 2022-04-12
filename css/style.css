@@ -45,9 +45,18 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: white;
+}
+
 .playlist h2 {
     font-size: 20px;
     color: white;
+}
+
+.playlist ul {
+    height: calc(300px - 82px);
+    overflow-y: scroll;
 }
 
 .fa-square-plus {
@@ -63,11 +72,8 @@ a {
     bottom: 0;
 }
 
-.fa-down-long {
-    padding: 7px;
-    margin-right: 10px;
-    border: 1px solid white;
-    border-radius: 50%;
+.fa-circle-down {
+    margin: 0 5px;
 }
 
 #footer-sidebar img {
@@ -84,7 +90,7 @@ main {
 /* header */
 header {
     height: 80px;
-    background-color: #080b12;
+    background-color: rgb(8, 11, 18);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -150,6 +156,11 @@ header a:hover {
     height: 250px;
 }
 
+.item img:hover {
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
 .text {
     text-align: center;
 }
@@ -164,6 +175,52 @@ header a:hover {
 }
 
 footer {
-    background-color: #080b12;
+    background-color: #282828;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+.item-footer { 
+    display: flex;
+    align-items: center;
+}
+
+.testo {
+    margin-left: 10px;
+}
+
+.testo h3 {
+    color: white;
+}
+
+.margin {
+    margin-left: 30px;
+}
+
+.fa-heart {
+    margin-right: 5px;
+}
+
+.icon {
+    color: white;
+    font-size: 20px;
+}
+
+.icon i {
+    margin: 0 30px;
+}
+
+.icon hr {
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    border-left: 20px solid white;
 }
