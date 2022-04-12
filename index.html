@@ -16,7 +16,8 @@
 
             <div class="column">
                 <div>
-                    <img src="img/logo.svg" alt="">
+                    <img id="pc-logo" src="img/logo.svg" alt="">
+                    <img id="media-logo" src="img/logo-small.svg" alt="">
                 </div>
                 <!-- nav -->
                 <nav>
@@ -24,19 +25,19 @@
                         <li>
                             <a class="item-select" href="">
                                 <i class="fa-solid fa-house"></i>
-                                Home
+                                <span class="text-icon">Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                Cerca
+                                <span class="text-icon">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <i class="fa-solid fa-grip-lines-vertical"></i>
-                                Playlist
+                                <i class="fa-solid fa-music"></i>
+                                <span class="text-icon">Playlist</span>
                             </a>
                         </li>
                     </ul>
@@ -183,7 +184,7 @@
                         </div>
                         
                     </div>
-                    <div class="item">
+                    <div class="item block">
                         <div>
                             <img src="img/cure.jpeg" alt="">
                         </div>
@@ -196,7 +197,7 @@
                         
                     </div>
 
-                    <div class="item">
+                    <div class="item block">
                         <div>
                             <img src="img/sinister.jpeg" alt="">
                         </div>
@@ -271,9 +272,10 @@
                     </div>
                 </div>
             </div>
-           
+           <!-- footer -->
             <footer>
-                <div class="item-footer">
+                <!-- brano in riproduzione -->
+                <div class="item-footer sx">
                     <div>
                         <img src="img/sinister.jpeg" alt="">
                     </div>    
@@ -288,26 +290,28 @@
                         <i class="fa-regular fa-folder"></i>
                     </div>
                 </div>
+                <!-- player -->
+                <div class="item-footer cx">
 
-                <div class="item-footer">
-
-                    <div class="icon">
+                    <div class="icon font-s">
                         <i class="fa-solid fa-shuffle"></i>
                         <i class="fa-solid fa-angle-left"></i>
                         <i class="fa-solid fa-circle-play"></i>
                         <i class="fa-solid fa-angle-right"></i>
                         <i class="fa-solid fa-rotate-right"></i>
+                        <hr id="special-hr">
                     </div>
-
                 </div>
-                <div class="icon">
-                    <div class="item-footer">
+                <!-- volume -->
+                <div class="item-footer dx">
+                    <div class="icon">
                         <i class="fa-solid fa-grip-lines"></i>
                         <i class="fa-solid fa-tv"></i>
-                        <i class="fa-solid fa-volume-high"></i>
-                        <hr>
-                    </div>
+                        <i class="fa-solid fa-volume-high"></i>                                              
+                        <hr id="barra-volume">  
+                    </div>                                  
                 </div>    
+
             </footer>
         </main>
     </div>   

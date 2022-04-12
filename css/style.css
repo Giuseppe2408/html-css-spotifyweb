@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: flex-start;
     background-color: black;
-    width: 250px;  
+    width: 20%;  
     height: 100vh;
     position: relative;
 }
@@ -26,10 +26,14 @@
     font-size: 20px;
 }
 
-#sidebar img {
+#pc-logo {
     width: 70%;
     margin: 0 -10px;
     object-fit: contain;
+}
+
+#media-logo {
+    display: none;
 }
 
 .item-select {
@@ -85,7 +89,7 @@ a:hover {
 }
 /* main */
 main {
-    width: calc(100% - 250px);
+    width: calc(100% - 20%);
 }
 /* header */
 header {
@@ -102,10 +106,6 @@ header a {
     border: white solid 1px;
     border-radius: 20px;
     transition: all .2s ease-in-out;
-}
-
-header a:hover {
-    transform: scale(1);
 }
 
 /* layout spotify */
@@ -138,11 +138,11 @@ header a:hover {
 
 .row {
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-start;
 }
 
 .item {
+    width: 17%;
     color: grey;
     margin: 10px;
 }
@@ -152,8 +152,8 @@ header a:hover {
 }
 
 .item img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 
 .item img:hover {
@@ -193,6 +193,18 @@ footer img {
     align-items: center;
 }
 
+.sx {
+    width: 20%;
+}
+
+.cx {
+    width: 40%;
+}
+
+.dx {
+    width: 30%;
+}
+
 .testo {
     margin-left: 10px;
 }
@@ -210,17 +222,83 @@ footer img {
 }
 
 .icon {
-    color: white;
-    font-size: 20px;
+    color: white;   
+}
+
+.font-s {
+    font-size: 30px;
 }
 
 .icon i {
-    margin: 0 30px;
+    margin: 10px 30px;
 }
 
-.icon hr {
-    width: 120px;
+#barra-volume {
+    width: 100px;
     border-radius: 10px;
     border: 2px solid grey;
     border-left: 20px solid white;
+}
+
+#special-hr {
+    border: 2px solid grey;
+    border-left: 80px solid white;
+}
+
+.text-volume {
+    color: white;
+}
+/* responsive pc piccolo */
+@media screen and (max-width: 940px) {
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 21%;
+    }
+
+    .sx {
+        width: 15%;
+    }
+    .cx {
+        width: 25%;
+    }
+    .dx {
+        width: 30%;
+    }
+}
+/* responsive tablet */
+@media screen and (max-width: 750px) {
+
+    .item {
+        width: 40%;
+    }
+}
+/* responsive telefono */
+@media screen and (max-width: 600px) {
+
+    #sidebar {
+        width: 10%;
+        align-items: center;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .column {
+        line-height: 80px;
+    }
+
+    .playlist, #footer-sidebar, 
+    .text-icon, #pc-logo{
+        display: none;        
+    }
+
+    #media-logo {
+        display: block;
+    }
 }
