@@ -16,7 +16,6 @@
     justify-content: flex-start;
     background-color: black;
     width: 15%;  
-    position: relative;
     height: calc(100vh - 80px);
 }
 
@@ -54,6 +53,13 @@ a:hover {
     color: white;
 }
 
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 280px);
+}    
+
 .playlist h2 {
     font-size: 20px;
     color: white;
@@ -61,7 +67,6 @@ a:hover {
 
 .playlist ul {
     height: calc(300px - 82px);
-    
 }
 
 .fa-square-plus {
@@ -73,8 +78,6 @@ a:hover {
 
 #footer-sidebar {
     color: white;
-    position: absolute;
-    bottom: 0;
 }
 
 .fa-circle-down {
@@ -83,7 +86,7 @@ a:hover {
 
 #footer-sidebar img {
     margin-top: 20px;
-    width: 15%;
+    width: 8%;
     margin: 0 5px;
     background-color: grey;
     border-radius: 50%;
@@ -150,6 +153,27 @@ header a {
     width: 17%;
     color: grey;
     margin: 10px;
+}
+
+.position {
+    position: relative;
+}
+
+.position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.position-center .fa-circle-play {
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+
+.position:hover .fa-circle-play {
+    display: block;
 }
 
 .item h3 {
@@ -246,7 +270,11 @@ footer img {
     width: 500px;
     border: 2px solid grey;
     border-left: 80px solid white;
-    display: block;
+    display: inline-block;
+}
+
+.f-size {
+    font-size: 15px;
 }
 
 .text-volume {
