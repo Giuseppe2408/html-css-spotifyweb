@@ -16,8 +16,8 @@
     justify-content: flex-start;
     background-color: black;
     width: 15%;  
-    height: 100vh;
     position: relative;
+    height: calc(100vh - 80px);
 }
 
 .column {
@@ -38,6 +38,7 @@
 
 .item-select {
     color: white;
+    
 }
 
 nav ul li {
@@ -60,7 +61,7 @@ a:hover {
 
 .playlist ul {
     height: calc(300px - 82px);
-    overflow-y: scroll;
+    
 }
 
 .fa-square-plus {
@@ -124,6 +125,10 @@ header a {
     display: inline-block;
     margin-top: 10px;
     margin-right: 10px;
+}
+
+#select-item {
+    border-bottom: 2px solid green;
 }
 
 .title {
@@ -193,18 +198,6 @@ footer img {
     align-items: center;
 }
 
-.sx {
-    width: 20%;
-}
-
-.cx {
-    width: 40%;
-}
-
-.dx {
-    width: 30%;
-}
-
 .testo {
     margin-left: 10px;
 }
@@ -230,7 +223,15 @@ footer img {
 }
 
 .icon i {
-    margin: 10px 30px;
+    margin: 10px 20px;
+}
+
+.cx {
+    text-align: center;
+}
+
+.dx i {
+    margin: 0 10px;
 }
 
 #barra-volume {
@@ -238,16 +239,26 @@ footer img {
     border-radius: 10px;
     border: 2px solid grey;
     border-left: 20px solid white;
+    display: inline-block;
 }
 
 #special-hr {
+    width: 500px;
     border: 2px solid grey;
     border-left: 80px solid white;
+    display: block;
 }
 
 .text-volume {
     color: white;
 }
+
+@media screen and (max-width: 1025px) {
+    .playlist ul{
+        overflow-y: scroll;
+    }
+}
+
 /* responsive pc piccolo */
 @media screen and (max-width: 940px) {
     
@@ -259,17 +270,23 @@ footer img {
     .item {
         width: 21%;
     }
+    /* footer */
 
-    .sx {
-        width: 15%;
-    }
-    .cx {
-        width: 25%;
-    }
-    .dx {
-        width: 30%;
+    .icon i {
+        margin: 5px 10px;
     }
 
+    .dx i {
+        margin: 0 2px;
+    }
+
+    #special-hr {
+        width: 350px;
+    }    
+
+    #barra-volume {
+        width: 80px;
+    }    
 }
 /* responsive tablet */
 @media screen and (max-width: 750px) {
@@ -281,6 +298,22 @@ footer img {
     .item {
         width: 40%;
     }
+
+    .icon i {
+        margin: 5px 10px;
+    }
+
+    .dx i {
+        margin: 0 1px;
+    }
+
+    #special-hr {
+        width: 250px;
+    }    
+
+    #barra-volume {
+        width: 60px;
+    } 
 }
 /* responsive telefono */
 @media screen and (max-width: 600px) {
@@ -293,7 +326,7 @@ footer img {
     main {
         width: 90%;
     }
-
+    /* sidebar */
     .column {
         line-height: 80px;
     }
@@ -306,4 +339,43 @@ footer img {
     #media-logo {
         display: block;
     }
+
+    .icon i {
+        margin: 5px 5px;
+    }
+
+    .dx i {
+        margin: 0;
+    }
+
+    #special-hr {
+        width: 200px;
+    }    
+    #barra-volume {
+        width: 40px;
+    } 
+}
+
+@media screen and (max-width: 546px) {
+    
+    /* footer */
+
+    .item-footer {
+        margin-right: 30px;
+    }
+
+    .icon i {
+        margin: 10px 0;
+    }
+
+    .dx i {
+        margin: 0;
+    }
+
+    #special-hr {
+        width: 150px;
+    }    
+    #barra-volume {
+        width: 20px;
+    } 
 }
