@@ -86,7 +86,8 @@ a:hover {
 
 #footer-sidebar img {
     margin-top: 20px;
-    width: 8%;
+    width: 20px;
+    height: 20px;
     margin: 0 5px;
     background-color: grey;
     border-radius: 50%;
@@ -281,10 +282,32 @@ footer img {
     color: white;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1120px) {
     .playlist ul{
         overflow-y: scroll;
     }
+
+    .none-text {
+        font-size: 18px;
+    }
+
+    .icon i {
+        margin: 5px 10px;
+    }
+    .font-s {
+        font-size: 26px;
+    }
+    .dx i {
+        margin: 0 5px;
+    }
+
+    #special-hr {
+        width: 350px;
+    }    
+
+    #barra-volume {
+        width: 80px;
+    }    
 }
 
 /* responsive pc piccolo */
@@ -303,7 +326,9 @@ footer img {
     .icon i {
         margin: 5px 10px;
     }
-
+    .font-s {
+        font-size: 25px;
+    }
     .dx i {
         margin: 0 2px;
     }
@@ -317,7 +342,7 @@ footer img {
     }    
 }
 /* responsive tablet */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 779px) {
 
     #sidebar {
         width: 20%;
@@ -326,17 +351,19 @@ footer img {
     .item {
         width: 40%;
     }
-
+    /* footer */
     .icon i {
         margin: 5px 10px;
     }
-
+    .font-s {
+        font-size: 23px;
+    }
     .dx i {
         margin: 0 1px;
     }
 
     #special-hr {
-        width: 250px;
+        width: 190px;
     }    
 
     #barra-volume {
@@ -359,15 +386,31 @@ footer img {
         line-height: 80px;
     }
 
-    .playlist, #footer-sidebar, 
-    .text-icon, #pc-logo{
+    .playlist, .text-icon, #pc-logo{
         display: none;        
     }
 
     #media-logo {
         display: block;
     }
+    #footer-sidebar {
+        margin-top: 300px;
+    }
+    .none-text {
+        display: none;
+    }
+    /* footer */
+    .item-footer {
+        margin-right: 30px;
+    }
 
+    .item-footer img {
+        display: none;
+    }
+
+    .font-s {
+        font-size: 17px;
+    }
     .icon i {
         margin: 5px 5px;
     }
@@ -377,19 +420,23 @@ footer img {
     }
 
     #special-hr {
-        width: 200px;
+        width: 150px;
     }    
     #barra-volume {
-        width: 40px;
+        width: 30px;
     } 
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 557px) {
     
     /* footer */
 
     .item-footer {
         margin-right: 30px;
+    }
+    
+    .font-s {
+        font-size: 20px;
     }
 
     .icon i {
@@ -401,9 +448,9 @@ footer img {
     }
 
     #special-hr {
-        width: 150px;
+        width: 90px;
     }    
     #barra-volume {
-        width: 20px;
+        width: 40px;
     } 
 }
